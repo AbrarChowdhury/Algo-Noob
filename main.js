@@ -1,3 +1,17 @@
+//factorial
+const factorialInput=document.getElementById("factorial-input");
+const factorialButton=document.getElementById("factorial-btn");
+const factorialAns=document.getElementById("factorial-ans")
+factorialButton.addEventListener("click",()=>factorialize(factorialInput.value))
+function factorialize(num) {
+    let x=1;
+    for(let i=1; i<=num; i++){
+      x*=i;
+    } 
+    num=x;
+    factorialAns.textContent=num;
+  }
+
 //Reverse String
 const rSInput=document.getElementById("reverse-string-input");
 const rSButton=document.getElementById("reverse-string-btn");
